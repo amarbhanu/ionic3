@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>All products</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-card *ngFor="let product of allProducts" (click)="goToProductDetailPage(product)">
+    <!-- <img [src]="product.image"/> -->
+    <ion-card>
+		<img [src]="product.image"/>
+	</ion-card>
+    <ion-card-content>
+			{{product.short_desc}}
+	</ion-card-content>
+    
+  </ion-card>
+</ion-content>
