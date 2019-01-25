@@ -17,7 +17,6 @@ export class HomePage {
 
   }
 
-
    ionViewCanEnter(){
   	//boolean value
   	//can enter a page??
