@@ -15,7 +15,17 @@ export class ProductProvider {
   }
 
   getProducts(){
-	  	return this.http.get<any[]>('http://localhost/test/api/t1/data.json')
+	  	//return this.http.get<any[]>('http://localhost/test/api/t1/data.json')
+
+	    return this.http.get<any[]>('/assets/get-hindi.json')
+
+  }
+
+  getProductsList(){
+      //return this.http.get<any[]>('http://localhost/test/api/t1/data.json')
+
+      return this.http.get<any[]>('/assets/get-hindi-list.json')
+
   }
 
 }

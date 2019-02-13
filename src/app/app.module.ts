@@ -5,6 +5,9 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { HotcareerPage } from '../pages/hotcareer/hotcareer';
+
+
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -20,6 +23,7 @@ import {ProductDetailPage} from '../pages/product-detail/product-detail';
     MyApp,
     HomePage,
     ListPage,
+    HotcareerPage,
     ProductDetailPage
   ],
   imports: [
@@ -32,6 +36,7 @@ import {ProductDetailPage} from '../pages/product-detail/product-detail';
     MyApp,
     HomePage,
     ListPage,
+    HotcareerPage,
     ProductDetailPage
   ],
   providers: [

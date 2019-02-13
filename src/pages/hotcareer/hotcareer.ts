@@ -1,27 +1,34 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 
 import {ProductDetailPage} from '../product-detail/product-detail';
 import { ProductProvider } from '../../providers/product/product';
 
 
+/**
+ * Generated class for the HotcareerPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
 
+@IonicPage()
 @Component({
-  selector: 'page-list',
-  templateUrl: 'list.html'
+  selector: 'page-hotcareer',
+  templateUrl: 'hotcareer.html',
 })
-export class ListPage {
+export class HotcareerPage {
   selectedItem: any;
   icons: string[];
   items: Array<{title: string, note: string, icon: string}>;
 
   public allProducts =[];
+
   constructor(public navCtrl: NavController, private productService : ProductProvider) {
   }
 
-   
-   ionViewCanEnter(){
+  ionViewCanEnter(){
     //boolean value
     //can enter a page??
     //permission check
@@ -83,5 +90,6 @@ export class ListPage {
 
 
   }
+
 
 }

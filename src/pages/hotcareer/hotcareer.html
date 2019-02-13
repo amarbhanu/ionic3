@@ -3,13 +3,19 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>Home Amar</ion-title>
+    <ion-title>Hot Career</ion-title>
   </ion-navbar>
 </ion-header>
+<!--
+  Generated template for the HotcareerPage page.
 
-<ion-content padding>
-<ion-card *ngFor="let product of allProducts" (click)="goToProductDetailPage(product)">
-    <!-- <img [src]="product.image"/> -->
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+ 
+
+<ion-content>
+   <ion-card *ngFor="let product of allProducts" (click)="goToProductDetailPage(product)">
     <ion-card>
     <img [src]="product.image"/>
   </ion-card>
@@ -19,4 +25,3 @@
     
   </ion-card>
 </ion-content>
-
