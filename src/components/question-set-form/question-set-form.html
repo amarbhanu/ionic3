@@ -1,0 +1,199 @@
+<!-- Generated template for the QuestionSetFormComponent component -->
+
+
+<ion-header>
+  <ion-navbar color='navbarColor'>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Question Example</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content  padding class="masters">
+  <ion-card>
+	<div>
+	  {{text}}
+	</div>
+
+
+	<!---------------------------
+
+	<ion-list radio-group *ngFor="let question of mcqData; let i= index;" (ionChange)="mcqAnswer($event)">
+		  <ion-list-header>
+		    {{question.questionText}}
+		  </ion-list-header>
+
+		  <ion-item>
+		    <ion-label>{{question.optionA}}</ion-label>
+		    <ion-radio  value="1"></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>{{question.optionB}}</ion-label>
+		    <ion-radio  value="2"></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>{{question.optionC}}</ion-label>
+		    <ion-radio  value="3"></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>{{question.optionD}}</ion-label>
+		    <ion-radio  value="4"></ion-radio>
+		  </ion-item>
+		</ion-list>
+
+	<!---------------------------->
+
+	<!----------------------
+
+	<ion-list radio-group >
+		  <ion-list-header>
+		    test
+		  </ion-list-header>
+
+		  <ion-item>
+		    <ion-label>A</ion-label>
+		    <ion-radio  value="1"></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>B</ion-label>
+		    <ion-radio  value="2"></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>C</ion-label>
+		    <ion-radio  value="3"></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>D</ion-label>
+		    <ion-radio  value="4"></ion-radio>
+		  </ion-item>
+		</ion-list>
+
+	<!---------------------->
+
+  </ion-card>
+
+<!----------------------
+  <ion-list radio-group>
+  <ion-radio-group>
+    <ion-list-header>
+      Auto Manufacturers
+    </ion-list-header>
+
+    <ion-item>
+      <ion-label>Cord</ion-label>
+      <ion-radio value="cord"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Duesenberg</ion-label>
+      <ion-radio value="duesenberg"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Hudson</ion-label>
+      <ion-radio value="hudson"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Packard</ion-label>
+      <ion-radio value="packard"></ion-radio>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Studebaker</ion-label>
+      <ion-radio value="studebaker"></ion-radio>
+    </ion-item>
+  </ion-radio-group>
+</ion-list>
+<!---------------------->
+
+<!--
+<form (ngSubmit)="logForm(form)">
+    <ion-list radio-group name="radio" [(ngModel)]="itemChecked">
+    <ion-item *ngFor="let item of items" >
+        <ion-label>{{item.description}}</ion-label>
+        <ion-radio (ionSelect)="select(item)" [value]="item"></ion-radio>
+    </ion-item>
+    </ion-list>
+
+    <ion-item>
+    <ion-label>
+        <button ion-button block type="submit">Continue</button>
+    </ion-label>
+    </ion-item>
+</form> -->
+
+
+<ion-list>
+		<ion-item>
+			<ion-label floating>Username</ion-label>
+			<ion-input type="text" name="username" [(ngModel)]="data.username"></ion-input>
+		</ion-item>
+		<ion-item>
+			<ion-label floating>Mobile</ion-label>
+			<ion-input type="text" name="mobile" [(ngModel)]="data.mobile"></ion-input>
+		</ion-item>
+
+
+		<ion-list name="dropVal"  [(ngModel)]="data.dropVal" radio-group >
+		  <ion-list-header>
+		    test
+		  </ion-list-header>
+
+		  <ion-item>
+		    <ion-label>A</ion-label>
+		    <ion-radio  value="1" ></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>B</ion-label>
+		    <ion-radio  value="2"  ></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>C</ion-label>
+		    <ion-radio  value="3"  ></ion-radio>
+		  </ion-item>
+
+		  <ion-item>
+		    <ion-label>D</ion-label>
+		    <ion-radio  value="4"  ></ion-radio>
+		  </ion-item>
+		</ion-list>
+
+
+    <ion-list name="radioSelectd" [(ngModel)]="data.radioSelect" radio-group>
+      <ion-list-header>
+		    test process
+		  </ion-list-header>
+    <ion-item *ngFor="let item of items" >
+        <ion-label>{{item.description}}</ion-label>
+        <ion-radio [value]="item"></ion-radio>
+    </ion-item>
+    </ion-list>
+
+
+		<button ion-button block (click)="submit()">Submit to server</button>
+	</ion-list>
+
+	<ion-card>
+		<ion-card-header>
+			Response
+		</ion-card-header>
+
+		<ion-card-content>
+			<b>{{data.response}}</b>
+		</ion-card-content>
+	</ion-card>
+
+
+
+</ion-content>

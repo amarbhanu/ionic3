@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color='navbarColor'>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -14,7 +14,7 @@
 -->
  
 
-<ion-content>
+<ion-content  padding class="masters">
    <ion-card *ngFor="let product of allProducts" (click)="goToProductDetailPage(product)">
     <ion-card>
     <img [src]="product.image"/>

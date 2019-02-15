@@ -7,6 +7,11 @@ import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
 import { HotcareerPage } from '../pages/hotcareer/hotcareer';
 
+import { ContactFormComponent } from '../components/contact-form/contact-form';
+
+import { QuestionSetFormComponent } from '../components/question-set-form/question-set-form';
+
+
 @Component({
   templateUrl: 'app.html'
 })
@@ -24,10 +29,12 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Career List', component: ListPage },
-      { title: 'Hot Career', component: HotcareerPage }
+      { title: 'Hot Career', component: HotcareerPage },
+      { title: 'Contact Form', component: ContactFormComponent },
+      { title: 'Question Example', component: QuestionSetFormComponent }
 
+      
     ];
-
   }
 
   initializeApp() {

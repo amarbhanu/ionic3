@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage, NavController } from 'ionic-angular';
 
 
 import {ProductDetailPage} from '../product-detail/product-detail';
@@ -38,7 +38,7 @@ export class HotcareerPage {
     //fires all internal setup
     //one time heavy liftin
     //fires only onces
-    this.productService.getProductsList()
+    this.productService.getHotcareerList()
       .subscribe((response) =>{this.allProducts = response});
     
 
